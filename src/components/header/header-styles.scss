@@ -1,0 +1,38 @@
+.header {
+  padding: 50px 0;
+  text-align: center;
+  background: url('../../assets/header-background.jpg');
+  position: relative;
+  color: #ffffff;
+
+  &__shadow {
+    background: rgba(1,1,1, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &--fullsize {
+    padding: 100px 0;
+  }
+
+  &__title {
+    font-size: 62px;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__description {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+}

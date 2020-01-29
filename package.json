@@ -7,8 +7,6 @@
     "@svgr/webpack": "4.3.2",
     "@types/jest": "24.0.22",
     "@types/node": "12.12.6",
-    "@types/react": "16.9.11",
-    "@types/react-dom": "16.9.4",
     "babel-eslint": "10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.6",
@@ -72,7 +70,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "backend": "nodemon api/server.js"
+    "backend": "nodemon api/server.js",
+    "precommit:run": "npm run lint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -143,13 +142,17 @@
     ]
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/lodash": "^4.14.146",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
     "@types/react-redux": "^7.1.5",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-import-resolver-typescript": "^2.0.0",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "precommit": "^1.2.2"
   }
 }

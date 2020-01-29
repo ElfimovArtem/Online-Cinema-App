@@ -68,6 +68,7 @@ module.exports =  {
     "react/no-array-index-key": 1,
     "react/destructuring-assignment": 0,
     "react/no-children-prop": 0,
+    "@typescript-eslint/explicit-function-return-type": 0
   },
   settings:  {
     react:  {
