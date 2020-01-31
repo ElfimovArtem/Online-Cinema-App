@@ -11,8 +11,11 @@ interface Movie {
 export const Movie = (props: Movie) => (
   <div className={cn('movie')}>
     <div className={cn('movie__image')}>
-      <img src={props.imgUrl || defaultImage} alt="" />
+      <img src={props.imgUrl || defaultImage} alt={props.title} />
+      <div className={cn('movie__overlay')}>
+        <span className={cn('movie__title')}>{props.title}</span>
+        <p className={cn('movie__description')}>{props.title}</p>
+      </div>
     </div>
-    <span className={cn('movie__title')}>{props.title}</span>
   </div>
 );

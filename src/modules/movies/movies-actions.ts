@@ -8,5 +8,6 @@ export const fetchMovies = () => async (dispatch: ReduxDispatch) => {
   dispatch({
     type: SET_MOVIES,
     data,
+    payload: data,
   });
 };

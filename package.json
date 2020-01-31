@@ -68,9 +68,11 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "backend": "nodemon api/server.js",
-    "lint": "eslint \"src/**/*.@(ts|tsx)\"",
-    "precommit:run": "npm run lint"
+    "lint": "eslint \"src/**/*.@(ts|tsx)\""
   },
+  "pre-commit": [
+    "lint"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
