@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Header } from '../../components/header';
+import { Movies } from '../../modules/movies';
 
 export const MainPage = () => (
   <div>
@@ -8,5 +9,6 @@ export const MainPage = () => (
       description="Смотрите где угодно: кино и сериалы в отличном качестве, без рекламы, на любом устройстве."
       fullSize
     />
+    <Movies />
   </div>
 );
