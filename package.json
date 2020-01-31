@@ -148,7 +148,7 @@
     "@types/react-redux": "^7.1.5",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
-    "eslint": "^6.1.0",
+    "eslint": "^6.6.0",
     "eslint-config-airbnb-typescript": "^6.0.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.18.2",
