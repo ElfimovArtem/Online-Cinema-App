@@ -1,17 +1,20 @@
+@import '../../themes/style-constants';
+
 .movies {
-  padding: 20px 0;
-  width: 1200px;
+  padding: $YAxisPadding 0;
+  width: $WrapperWidth;
   margin: auto;
 
   &__title {
     font-size: 32px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: $YAxisPadding;
+    margin: 0;
   }
 
   &__container {
     display: grid;
-    grid-gap: 40px 20px;
+    grid-gap: $YAxisPadding $XAxisPadding;
     grid-template-columns: auto auto auto auto;
   }
 }
