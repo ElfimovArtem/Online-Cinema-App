@@ -35,7 +35,6 @@ module.exports =  {
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/href-no-hash": "off",
     "object-curly-spacing": ["error", "always"],
-    "class-methods-use-this": ["warn", { "exceptMethods": ["render"]}],
     "max-len": ["error", 120, 2, {
       "ignoreUrls": true,
       "ignoreComments": false,
@@ -68,7 +67,7 @@ module.exports =  {
     "react/no-array-index-key": 1,
     "react/destructuring-assignment": 0,
     "react/no-children-prop": 0,
-    "@typescript-eslint/explicit-function-return-type": 0
+    "@typescript-eslint/explicit-function-return-type": 0,
   },
   settings:  {
     react:  {

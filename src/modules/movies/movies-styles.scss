@@ -1,8 +1,17 @@
 .movies {
-  padding: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 20px 0;
   width: 1200px;
   margin: auto;
+
+  &__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
