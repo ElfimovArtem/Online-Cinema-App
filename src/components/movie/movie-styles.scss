@@ -1,3 +1,5 @@
+@import '../../themes/style-constants';
+
 .movie {
   width: 250px;
 
@@ -44,7 +46,8 @@
   }
 
   &__description {
-    padding: 0;
     margin: 0;
+    text-align: center;
+    padding: $YAxisHalfPadding $XAxisPadding;
   }
 }

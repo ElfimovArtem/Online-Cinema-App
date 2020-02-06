@@ -6,6 +6,7 @@ import './movie-styles.scss';
 interface Movie {
   title: string;
   imgUrl?: string;
+  description: string;
 }
 
 export const Movie = (props: Movie) => (
@@ -14,7 +15,7 @@ export const Movie = (props: Movie) => (
       <img src={props.imgUrl || defaultImage} alt={props.title} />
       <div className={cn('movie__overlay')}>
         <span className={cn('movie__title')}>{props.title}</span>
-        <p className={cn('movie__description')}>{props.title}</p>
+        <p className={cn('movie__description')}>{props.description}</p>
       </div>
     </div>
   </div>
