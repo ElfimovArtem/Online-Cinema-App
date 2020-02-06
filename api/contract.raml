@@ -1,0 +1,55 @@
+/movies:
+  get:
+    description: "Use to receive information about movies"
+    request: null,
+    response: [{
+      "id": number,
+      "name": string,
+      "description": string,
+      "year": number,
+      "tags": string[],
+      "images": string[],
+    }];
+  post:
+    description: "Use to add new movie"
+    request: {
+      "id": number,
+      "name": string,
+      "description": string,
+      "year": number,
+      "tags": string[],
+      "images": string[],
+    },
+    response: [{
+      "id": number,
+      "name": string,
+      "description": string,
+      "year": number,
+      "tags": string[],
+      "images": string[],
+    }]
+  delete:
+    description: "Use to delete a movie"
+    request: {
+      "id": number
+    },
+    response: [{
+      "id": number,
+      "name": string,
+      "description": string,
+      "year": number,
+      "tags": string[],
+      "images": string[],
+    }]
+  /:name:
+    get:
+      description: "Use to receive information about a movie"
+      request: null,
+      response: {
+        "id": number,
+        "name": string,
+        "description": string,
+        "year": number,
+        "tags": string[],
+        "images": string[],
+      };
