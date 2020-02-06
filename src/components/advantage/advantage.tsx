@@ -2,13 +2,13 @@ import * as React from 'react';
 import cn from 'classnames';
 import './advantage-style.scss';
 
-interface Advantage {
+interface AdvantagePropTypes {
   title: string;
   description: string;
   imageUrl: string;
 }
 
-export const Advantage = (props: Advantage) => (
+export const Advantage = (props: AdvantagePropTypes) => (
   <div className={cn('advantage')}>
     <div className={cn('advantage__icon')}>
       <img src={props.imageUrl} alt={props.title} className={cn('advantage__icon-image')} />

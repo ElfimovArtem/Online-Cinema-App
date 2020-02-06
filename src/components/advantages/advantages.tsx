@@ -4,14 +4,14 @@ import { Advantage } from '../advantage';
 import { ADVANTAGES_LIST } from './advantages-constants';
 import './advantages-styles.scss';
 
-interface Advantages {
+interface AdvantagesPropTypes {
   title: string;
   description: string;
 }
 
 const blockName = 'advantages';
 
-export const Advantages = (props: Advantages) => (
+export const Advantages = (props: AdvantagesPropTypes) => (
   <div className={cn(blockName)}>
     <h2
       className={cn(

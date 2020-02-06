@@ -36,7 +36,8 @@ module.exports = {
     "comma-dangle": ["error", "always-multiline"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "object-curly-spacing": ["error", "always"],
-    "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }]
+    "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }],
+    "jsx-a11y/control-has-associated-label": 0
   },
   "settings": {
     "react": {
