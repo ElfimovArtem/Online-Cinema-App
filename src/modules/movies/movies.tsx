@@ -15,9 +15,9 @@ export const Movies = ({ title, moviesList }: MoviesPropTypes) => (
     <div className={cn('movies__container')}>
       {
         Array.isArray(moviesList) ? moviesList.map((movie: MovieElement) => (
-          <Movie title={movie.name} description={movie.description} imgUrl={movie.images[0]} />
+          <Movie key={movie.id} title={movie.name} description={movie.description} imgUrl={movie.images[0]} />
         )) : (
-          <span>Sorry, films not found...</span>
+          <span>Sorry, films not found....</span>
         )
       }
     </div>

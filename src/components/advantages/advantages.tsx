@@ -26,7 +26,14 @@ export const Advantages = (props: AdvantagesPropTypes) => (
     <p className={cn(`${blockName}__description`)}>{props.description}</p>
     <div className={cn(`${blockName}__block`)}>
       {
-        ADVANTAGES_LIST.map((el) => <Advantage title={el.title} description={el.description} imageUrl={el.imageUrl} />)
+        ADVANTAGES_LIST.map((el) => (
+          <Advantage
+            key={el.id}
+            title={el.title}
+            description={el.description}
+            imageUrl={el.imageUrl}
+          />
+        ))
       }
     </div>
   </div>
