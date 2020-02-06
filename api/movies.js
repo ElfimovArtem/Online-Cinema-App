@@ -1,4 +1,5 @@
 const fs = require('fs');
+const lodash = require('lodash');
 
 const readMoviesUtil = (res, rej) => {
   fs.readFile('api/movies.json', (err, data) => {
@@ -22,6 +23,16 @@ const writeMoviesUtil = (updatedMovies, callback) => {
 };
 
 module.exports = function(server) {
+  server.get('/movies/:name', async (req, res) => {
+    const readMovies = new Promise((resolve, reject) => readMoviesUtil(resolve, reject));
+
+    readMovies
+      .then(moviesResponse => {
+        res.send(moviesResponse.movies.find(movie => lodash.kebabCase(movie.name) === req.params.name))
+      })
+      .catch(err => console.log(err));
+  });
+
   server.get('/movies', async (req, res) => {
     const readMovies = new Promise((resolve, reject) => readMoviesUtil(resolve, reject));
 
