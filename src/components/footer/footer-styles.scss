@@ -1,0 +1,35 @@
+@import '../../themes/style-constants';
+
+.footer {
+  background: #000000;
+  color: #ffffff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    width: $WrapperWidth;
+    margin: auto;
+    align-items: center;
+  }
+
+  &__description-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  &__description-link:hover {
+    color: #ff2400;
+  }
+
+  &__social-link {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0 10px;
+  }
+
+  &__social-link:hover {
+    color: #ff2400;
+  }
+}
