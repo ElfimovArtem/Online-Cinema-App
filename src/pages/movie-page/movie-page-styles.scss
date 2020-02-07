@@ -1,0 +1,22 @@
+@import '../../themes/style-constants';
+
+.movie-page-wrapper {
+  text-align: left;
+  padding: $YAxisPadding 0;
+  margin: 0 auto;
+  width: $WrapperWidth;
+
+  &__title {
+    font-size: $TitleFontSize;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: $XAxisPadding;
+  }
+
+  &__description {
+    font-size: $DescriptionFontSize;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: $YAxisPadding;
+  }
+}

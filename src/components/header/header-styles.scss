@@ -3,9 +3,18 @@
 .header {
   padding: $YAxisPadding 0;
   text-align: center;
-  background: url('../../assets/header-background.jpg');
   position: relative;
   color: #ffffff;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 
   &__shadow {
     background: rgba(1,1,1, 0.4);
