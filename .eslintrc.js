@@ -13,7 +13,7 @@ module.exports = {
     "project": "./tsconfig.json",
     "tsconfigRootDir": "./"
   },
-  "plugins": ["@typescript-eslint", "import", "react"],
+  "plugins": ["@typescript-eslint/eslint-plugin", "import", "react"],
   "extends": ["airbnb-typescript"],
   "rules": {
     "import/prefer-default-export": 0,

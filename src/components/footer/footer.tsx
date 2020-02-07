@@ -9,7 +9,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import './footer-styles.scss';
 
-
 interface FooterPropTypes {
   description: string;
 }
